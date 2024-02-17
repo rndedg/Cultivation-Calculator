@@ -7,6 +7,24 @@ body {
   -moz-osx-font-smoothing: grayscale;
   display: flex;
   text-align: -webkit-right;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-color: rgb(221, 219, 219);
+  width: 100%;
+}
+
+input {
+  width: 20%;
+}
+
+.merLogo {
+  opacity: 0.3;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: -2;
 }
 
 h3 {
@@ -18,26 +36,16 @@ code {
     monospace;
 }
 
-/* Small devices such as large phones (640px and up) */
-/* @media only screen and (min-width: 40em) {
-  body {
-  }
+.submitBtn {
+  background-color: #04aa6d;
+  border-radius: 6px;
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 20%;
+  padding: 10px;
 }
-
-/* Medium devices such as tablets (768px and up) */
-/* @media only screen and (min-width: 48em) {
-  body {
-  }
-} */
-
-/* Large devices such as laptops (1024px and up) */
-/* @media only screen and (min-width: 64em) {
-  body {
-  }
-} */
-
-/* Largest devices such as desktops (1280px and up) */
-/* @media only screen and (min-width: 80em) {
-  body {
-  }
-} */
+.submitBtn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
