@@ -86,6 +86,7 @@ export default function MyForm() {
       ></img>
       <div className="calcForm">
         <h3>Enter your makeup:</h3>
+        <br />
         <form onSubmit={handleSubmit}>
           <label>
             What is the total volume of your mix in mL?
@@ -151,13 +152,15 @@ export default function MyForm() {
       </div>
       <div className="results">
         <h3>Here are your results:</h3>
+        <br />
         <p>{result1}</p>
         <p>{result2}</p>
         <p>{result3}</p>
         <p>{result4}</p>
         <p>{result5}</p>
         <p>{result6}</p>
-        <input className="resetBtn" type="submit" onClick={resetBtnView} />
+
+        <input className="resetBtn" type="reset" onClick={resetBtnView} />
       </div>
     </div>
   );
