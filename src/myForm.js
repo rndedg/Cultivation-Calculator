@@ -144,6 +144,7 @@ export default function MyForm() {
               name="totalPH"
               value={inputs.totalPH || ""}
               onChange={handleChange}
+              onEnterKeyPress={() => handleSubmit(inputs)} // here
             />
           </label>
           <br />
