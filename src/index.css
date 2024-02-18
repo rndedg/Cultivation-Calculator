@@ -45,7 +45,24 @@ code {
   width: 20%;
   padding: 10px;
 }
+
 .submitBtn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.resetBtn {
+  background-color: #04aa6d;
+  border-radius: 6px;
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 55%;
+  margin-top: 25px;
+  padding: 10px;
+}
+
+.resetBtn:active {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);

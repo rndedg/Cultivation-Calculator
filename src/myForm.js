@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./myForm.css";
 
 export default function MyForm() {
   const [inputs, setInputs] = useState({});
@@ -13,6 +14,22 @@ export default function MyForm() {
     marginBottom: 2 + "em",
     marginLeft: 2 + "em",
   };
+
+  function submitBtnView() {
+    const calcForm = document.querySelector(".calcForm");
+    const results = document.querySelector(".results");
+
+    results.style.display = "block";
+    calcForm.style.display = "none";
+  }
+
+  function resetBtnView() {
+    const calcForm = document.querySelector(".calcForm");
+    const results = document.querySelector(".results");
+
+    results.style.display = "none";
+    calcForm.style.display = "block";
+  }
 
   const handleChange = (event) => {
     const name = event.target.name;
@@ -64,14 +81,14 @@ export default function MyForm() {
     <div style={{ justifyItems: "space-evenly" }}>
       <img
         class="merLogo"
-        src="https://raw.githubusercontent.com/rndedg/Cultivation-Calculator/main/assets/merLogo.webp"
+        src="https://meridian125w.com/images/b11d11d9ad054f510e74819533234c40.png"
         alt="Merdian 125 Cultivation Ltd logo"
       ></img>
-      <div>
+      <div className="calcForm">
         <h3>Enter your makeup:</h3>
         <form onSubmit={handleSubmit}>
           <label>
-            What is the total volume of your mix makeup in mL?
+            What is the total volume of your mix in mL?
             <input
               style={{
                 marginTop: 1 + "em",
@@ -129,10 +146,10 @@ export default function MyForm() {
             />
           </label>
           <br />
-          <input className="submitBtn" type="submit" />
+          <input className="submitBtn" type="submit" onClick={submitBtnView} />
         </form>
       </div>
-      <div>
+      <div className="results">
         <h3>Here are your results:</h3>
         <p>{result1}</p>
         <p>{result2}</p>
@@ -140,6 +157,7 @@ export default function MyForm() {
         <p>{result4}</p>
         <p>{result5}</p>
         <p>{result6}</p>
+        <input className="resetBtn" type="submit" onClick={resetBtnView} />
       </div>
     </div>
   );
