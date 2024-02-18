@@ -62,6 +62,11 @@ export default function MyForm() {
 
   return (
     <div style={{ justifyItems: "space-evenly" }}>
+      <img
+        class="merLogo"
+        src="https://raw.githubusercontent.com/rndedg/Cultivation-Calculator/main/assets/merLogo.webp"
+        alt="Merdian 125 Cultivation Ltd logo"
+      ></img>
       <div>
         <h3>Enter your makeup:</h3>
         <form onSubmit={handleSubmit}>
@@ -124,7 +129,7 @@ export default function MyForm() {
             />
           </label>
           <br />
-          <input type="submit" />
+          <input className="submitBtn" type="submit" />
         </form>
       </div>
       <div>

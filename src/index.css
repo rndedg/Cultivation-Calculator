@@ -30,6 +30,7 @@ input {
 h3 {
   display: flex;
   text-align: -webkit-left;
+  padding-left: 2%;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
