@@ -75,6 +75,7 @@ export default function MyForm() {
         inputs.currBatch
       ).toFixed(4)} mL pH Down per batch`
     );
+    submitBtnView();
   };
 
   return (
@@ -147,7 +148,7 @@ export default function MyForm() {
             />
           </label>
           <br />
-          <input className="submitBtn" type="submit" onClick={submitBtnView} />
+          <input className="submitBtn" type="submit" onClick={handleSubmit} />
         </form>
       </div>
       <div className="results">
