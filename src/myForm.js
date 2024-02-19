@@ -24,11 +24,7 @@ export default function MyForm() {
   }
 
   function resetBtnView() {
-    const calcForm = document.querySelector(".calcForm");
-    const results = document.querySelector(".results");
-
-    results.style.display = "none";
-    calcForm.style.display = "block";
+    window.location.reload();
   }
 
   const handleChange = (event) => {
@@ -81,7 +77,7 @@ export default function MyForm() {
   return (
     <div style={{ justifyItems: "space-evenly" }}>
       <img
-        class="merLogo"
+        className="merLogo"
         src="https://meridian125w.com/images/b11d11d9ad054f510e74819533234c40.png"
         alt="Merdian 125 Cultivation Ltd logo"
       ></img>
